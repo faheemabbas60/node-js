@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="./css/style.css">
+
+<head>
+
+</head>
+
+<body>
+{{>header}}
+<p>Use this site to fetch your weather data</p>
+<form>
+<input placeholder="Location" id="location">
+<button>Search</button>
+<p id="locationLabel"></p>
+<p id="timezone"></p>
+<p id="forecast"></p>
+</form>
+{{>footer}}
+<script src="./js/fetchRequest.js"></script>
+</body>
+
+</html>
