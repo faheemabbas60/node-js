@@ -13,6 +13,8 @@ const timezone=document.querySelector('#timezone')
 const forecast=document.querySelector('#forecast')
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
+    timezone.textContent=''
+    forecast.textContent=''
     const location = serach.value
     locationLabel.textContent='Location: '+location
     getForecast(location)
